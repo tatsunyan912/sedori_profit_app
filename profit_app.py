@@ -14,11 +14,11 @@ with st.form(key="profit_form"):
 
     selling_price = st.number_input("販売価格（円）", min_value=0, value=0, step=100)
     cost_price = st.number_input("仕入れ価格（円）", min_value=0, value=0, step=100)
-    shipping_cost = st.number_input("送料（円）", min_value=0, value=0, step=100)
+    shipping_cost = st.number_input("送料（円）", min_value=0, value=215, step=100)
 
     platform_fee_percent = st.number_input("販売手数料（%）", min_value=0.0, max_value=100.0, value=10.0, step=0.1)
-    shop_point_percent = st.number_input("店舗ポイント還元率（%）", min_value=0.0, max_value=100.0, value=0.0, step=0.1)
-    card_point_percent = st.number_input("クレカポイント還元率（%）", min_value=0.0, max_value=100.0, value=0.0, step=0.1)
+    shop_point_percent = st.number_input("店舗ポイント還元率（%）", min_value=0.0, max_value=100.0, value=10.0, step=0.1)
+    card_point_percent = st.number_input("クレカポイント還元率（%）", min_value=0.0, max_value=100.0, value=7.0, step=0.1)
 
     submitted = st.form_submit_button("計算して保存")
 
